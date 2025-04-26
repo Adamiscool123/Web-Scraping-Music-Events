@@ -21,7 +21,7 @@ def store(extrac):
     with open("data.txt", "a") as file:
         file.write(extrac + "\n")
 
-def read(extra):
+def read():
     with open("data.txt", "r") as file:
         return file.read()
 
@@ -30,7 +30,7 @@ if __name__ == '__main__':
         scraped = scrape(URL)
         extracted = extract(scraped)
         print(extracted)
-        content = read(extracted)
+        content = read()
         if extracted != "No upcoming tours":
             if not extracted in content:
                 store(extracted)
