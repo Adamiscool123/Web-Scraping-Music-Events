@@ -3,6 +3,7 @@ import os
 
 
 def send_email(message):
+    """Send an email with data"""
     host = "smtp.gmail.com"
     port = 465
 

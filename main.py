@@ -18,10 +18,12 @@ def extract(text):
     return value
 
 def store(extrac):
+    """Store new data"""
     with open("data.txt", "a") as file:
         file.write(extrac + "\n")
 
 def read():
+    """Read data"""
     with open("data.txt", "r") as file:
         return file.read()
 
