@@ -4,7 +4,7 @@ from send_email import send_email
 import time
 import sqlite3
 
-connection = sqlite3.connect("data.db")
+connection = sqlite3.connect("data.db",)
 
 URL = "https://programmer100.pythonanywhere.com/tours/"
 
